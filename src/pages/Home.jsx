@@ -38,7 +38,7 @@ function Home() {
         (
           
             data.length > 0 ? (
-              <div className='grid grid-cols-4 max-w-6xl p-2 mx-auto space-y-10 space-x-5 min-h-[80vh]'>
+              <div className=' md:grid-cols-3   grid sm:grid-cols-2 xs:grid-cols-1 lg:grid-cols-4 max-w-6xl p-4 mx-auto space-y-10 space-x-5 min-h-[80vh] overflow-hidden'>
                 {
                 data.map( (post) =>(
                   <Product key ={post.id} post ={post}/>

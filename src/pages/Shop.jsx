@@ -34,7 +34,7 @@ const Shop = () => {
 
   return (
     <div>
-      <div className='flex w-[80vw] mx-auto mt-[20px]'>
+      <div className=' sm:flex sm:flex-col   lg:flex lg:flex-row w-[80vw] mx-auto mt-[20px]'>
         <div className='w-[100%] shadow-2xl'>
         <img src={data.image} alt="" className='h-[100%] w-[100%] object-contain' />
         </div>

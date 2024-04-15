@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {add,remove} from '../redux/slices/Slice'
 import { NavLink } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Product = ({post}) => {
     const {cart} = useSelector((state)=>state);
@@ -10,11 +11,13 @@ const Product = ({post}) => {
 
     const addToCart =()=>{
         dispatch(add(post));
+        toast.success("Item Add to Cart")
         // toast.success("item added to cart")
     }
 
     const remoeFromeCart =()=>{
         dispatch(remove(post.id));
+        toast.error("Item Remove from Cart")
         // toast.success("item remove from cart")
     }
   return (
