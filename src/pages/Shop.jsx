@@ -39,7 +39,7 @@ const Shop = () => {
         <img src={data.image} alt="" className='h-[100%] w-[100%] object-contain' />
         </div>
         <div className=' flex flex-col gap-12 pl-10 pt-10'>
-            <p className='text-2xl font-extrabold border-b-[2px] border-black h-[90px]'>{data.title}</p>
+            <p className='text-2xl font-extrabold border-b-[2px] border-black pb-[20px]'>{data.title}</p>
             <p>{data.description}</p>
             <p className='text-2xl font-[600]'>Rating : <span>{data?.rating?.rate}/5</span></p>
             <div>
